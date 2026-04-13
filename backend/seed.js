@@ -12,7 +12,7 @@ const Article = require('./models/Article');
 const Feedback = require('./models/Feedback');
 
 const seed = async () => {
-  await mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/sportify-tn');
+  await mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/sportify');
 
   await Promise.all([
     User.deleteMany(),

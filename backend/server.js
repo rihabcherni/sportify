@@ -25,7 +25,7 @@ app.use('/uploads', express.static(uploadsDir));
 // Root message
 app.get('/', (req, res) => {
   res.json({
-    message: 'Sportify TN backend is running',
+    message: 'Sportify backend is running',
     docs: '/api-docs',
   });
 });
@@ -35,7 +35,7 @@ const swaggerSpec = swaggerJsdoc({
   definition: {
     openapi: '3.0.0',
     info: {
-      title: 'Sportify TN API',
+      title: 'Sportify API',
       version: '1.0.0',
     },
     servers: [

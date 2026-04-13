@@ -1,6 +1,6 @@
 <div align="center">
 
-# ⚽ Sportify TN <img src="https://img.shields.io/badge/Sportify-TN-1a73e8?style=for-the-badge&logo=lightning&logoColor=white" alt="Sportify TN" height="20"/>
+# ⚽ Sportify <img src="https://img.shields.io/badge/Sportify-1a73e8?style=for-the-badge&logo=lightning&logoColor=white" alt="Sportify" height="20"/>
 
 **All-in-one Tunisian sports platform — news, matches, videos, articles, and stars**
 
@@ -27,7 +27,7 @@
 
 ## 🎯 Overview
 
-**Sportify TN** is a full‑stack web app that centralizes Tunisian and international sports content. It offers:
+**Sportify** is a full‑stack web app that centralizes Tunisian and international sports content. It offers:
 
 - A **public interface** to browse news, matches, videos, articles, and star profiles
 - A **complete admin back‑office** for CRUD management of all content
@@ -89,7 +89,7 @@
 ## 🏗️ Architecture
 
 ```
-sportify-tn/
+sportify/
 ├── frontend/               # React app
 │   ├── src/
 │   │   ├── components/     # Reusable components

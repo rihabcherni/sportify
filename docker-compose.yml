@@ -18,7 +18,7 @@ services:
       - "5000:5000"
     environment:
       - MONGO_URI=mongodb+srv://rihabcherni000_db_user:xPBpXhfbvOYzINWS@cluster0.lgeg4iq.mongodb.net/
-      - JWT_SECRET=sportify_tn_super_secret_2026
+      - JWT_SECRET=sportify_super_secret_2026
       - NODE_ENV=production
     depends_on:
       - mongodb
