@@ -1,0 +1,242 @@
+.admin-users {
+  width: 100%;
+}
+
+.admin-users-header {
+  margin-bottom: 28px;
+}
+
+.admin-users-title {
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+
+.admin-users-subtitle {
+  color: #888;
+  margin-top: 6px;
+}
+
+.admin-users-table-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.admin-users-cards {
+  display: none;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.admin-users-card {
+  background: white;
+  border-radius: 12px;
+  padding: 14px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.admin-users-card-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.admin-users-card-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.admin-users-card-meta {
+  font-size: 0.85rem;
+}
+
+.admin-users-card-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.admin-users-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+.admin-users-page-btn {
+  border: 1px solid #e2e2e2;
+  background: #fff;
+  color: #333;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.admin-users-page-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.admin-users-page-info {
+  color: #666;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.admin-users-page-list {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.admin-users-page-number {
+  border: 1px solid #e2e2e2;
+  background: #fff;
+  color: #333;
+  font-weight: 700;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  min-width: 36px;
+}
+
+.admin-users-page-number.is-active {
+  background: #1a73e8;
+  color: #fff;
+  border-color: #1a73e8;
+}
+
+.admin-users-page-ellipsis {
+  color: #777;
+  font-weight: 700;
+}
+
+.admin-users-page-size {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  color: #555;
+}
+
+.admin-users-page-select {
+  padding: 6px 10px;
+  border: 1px solid #e2e2e2;
+  border-radius: 8px;
+  background: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.admin-users-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-users-table-head {
+  background: #f9f9f9;
+  border-bottom: 2px solid #eee;
+}
+
+.admin-users-th {
+  padding: 14px 16px;
+  text-align: right;
+  font-weight: 800;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.admin-users-tr {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.admin-users-td {
+  padding: 14px 16px;
+}
+
+.admin-users-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.admin-users-avatar {
+  width: 36px;
+  height: 36px;
+  background: #ddd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.admin-users-avatar.is-admin {
+  background: #CC0000;
+  color: white;
+}
+
+.admin-users-name {
+  font-weight: 700;
+}
+
+.admin-users-muted {
+  color: #666;
+}
+
+.admin-users-badge {
+  color: white;
+  font-size: 0.78rem;
+}
+
+.admin-users-date {
+  color: #888;
+  font-size: 0.85rem;
+}
+
+.admin-users-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.admin-users-btn {
+  padding: 6px 14px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Cairo', sans-serif;
+  font-weight: 700;
+  font-size: 0.78rem;
+}
+
+.admin-users-btn-edit {
+  background: #1a73e8;
+}
+
+.admin-users-btn-neutral {
+  background: #555;
+}
+
+.admin-users-btn-delete {
+  background: #CC0000;
+}
+
+@media (max-width: 700px) {
+  .admin-users-table-card {
+    display: none;
+  }
+
+  .admin-users-cards {
+    display: grid;
+  }
+}

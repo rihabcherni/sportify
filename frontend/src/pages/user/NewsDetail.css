@@ -1,0 +1,150 @@
+.news-detail {
+  padding: 40px 20px;
+  min-width: 85%;
+}
+
+.news-detail-loading {
+  text-align: center;
+  padding: 80px;
+  color: #CC0000;
+  font-size: 1.5rem;
+}
+
+.news-detail-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+}
+
+.news-detail-back {
+  color: #CC0000;
+  font-weight: 700;
+  margin-bottom: 20px;
+  display: inline-block;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.news-detail-badge {
+  margin-bottom: 12px;
+  display: block;
+  width: fit-content;
+}
+
+.news-detail-title {
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+.news-detail-meta {
+  display: flex;
+  gap: 20px;
+  color: #888;
+  font-size: 0.9rem;
+  margin-bottom: 24px;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 16px;
+}
+
+.news-detail-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 28px;
+  max-height: 420px;
+  object-fit: cover;
+}
+
+.news-detail-content {
+  line-height: 2;
+  font-size: 1.05rem;
+  color: #333;
+}
+
+.news-detail-video-wrapper {
+  margin-bottom: 30px;
+  background: #000;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.news-detail-direct-video {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+.news-detail-video-link {
+  padding: 20px;
+  text-align: center;
+}
+
+.news-detail-aside-title {
+  border-right: 4px solid #CC0000;
+  padding-right: 12px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.news-detail-related-link {
+  text-decoration: none;
+}
+
+.news-detail-related-card {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  transition: border-color 0.2s;
+}
+
+.news-detail-related-card:hover {
+  border-color: #CC0000;
+}
+
+.news-detail-related-img {
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.news-detail-related-title {
+  font-size: 0.88rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #111;
+}
+
+.news-detail-related-date {
+  font-size: 0.78rem;
+  color: #999;
+  margin-top: 4px;
+}
+
+@media (max-width: 900px) {
+  .news-detail-grid {
+    grid-template-columns: 1fr;
+  }
+}

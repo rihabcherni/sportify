@@ -1,0 +1,150 @@
+.admin-page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.admin-page-title {
+  font-size: 1.6rem;
+  font-weight: 900;
+  margin: 0;
+}
+
+.admin-page-subtitle {
+  color: #666;
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin: 4px 0 0;
+}
+
+.admin-page-header-action {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.admin-media-label {
+  display: block;
+  font-weight: 700;
+  color: #333;
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+}
+
+.admin-media-input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1.5px solid #e5e5e5;
+  border-radius: 6px;
+  font-family: 'Cairo', sans-serif;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.admin-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.admin-pagination-size {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  color: #555;
+}
+
+.admin-page-btn {
+  border: 2px solid #ddd;
+  background: #fff;
+  color: #555;
+  font-weight: 700;
+  padding: 0 10px;
+  height: 40px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.admin-page-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.admin-page-list {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.admin-page-number {
+  border: 2px solid #ddd;
+  background: #fff;
+  color: #555;
+  font-weight: 700;
+  padding: 0 10px;
+  height: 40px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+}
+
+.admin-page-number.is-active {
+  border-color: #CC0000;
+  background: #CC0000;
+  color: white;
+}
+
+.admin-page-ellipsis {
+  color: #777;
+  font-weight: 700;
+}
+
+.admin-page-info {
+  color: #666;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.admin-page-select {
+  padding: 6px 10px;
+  border: 1px solid #e2e2e2;
+  border-radius: 8px;
+  background: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.pagination-icon {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: currentColor;
+}
+
+@media (max-width: 700px) {
+  .admin-page-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .admin-page-header-action {
+    width: 100%;
+  }
+
+  .admin-page-header-action > * {
+    width: 100%;
+  }
+}

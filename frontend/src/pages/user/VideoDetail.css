@@ -1,0 +1,137 @@
+.video-detail {
+  padding: 40px 20px;
+  min-width: 85%;
+}
+
+.video-detail-loading {
+  text-align: center;
+  padding: 80px;
+  color: #CC0000;
+  font-size: 1.5rem;
+}
+
+.video-detail-back {
+  margin-top: 20px;
+  color: #CC0000;
+  font-weight: 700;
+  margin-bottom: 20px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.video-detail-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+}
+
+.video-detail-player {
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 24px;
+  background: #000;
+  aspect-ratio: 16 / 9;
+}
+
+.video-detail-iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.video-detail-badge {
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.video-detail-title {
+  font-size: 1.6rem;
+  font-weight: 900;
+  margin-bottom: 12px;
+}
+
+.video-detail-meta {
+  color: #888;
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+}
+
+.video-detail-desc {
+  line-height: 1.9;
+  color: #444;
+}
+
+.video-detail-aside-title {
+  border-right: 4px solid #CC0000;
+  padding-right: 12px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.video-detail-related-link {
+  text-decoration: none;
+}
+
+.video-detail-related-card {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  transition: border-color 0.2s;
+}
+
+.video-detail-related-card:hover {
+  border-color: #CC0000;
+}
+
+.video-detail-related-thumb {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.video-detail-related-img {
+  width: 90px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.video-detail-related-play {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-detail-related-play-icon {
+  width: 24px;
+  height: 24px;
+  background: #CC0000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.6rem;
+  color: white;
+}
+
+.video-detail-related-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #111;
+}
+
+.video-detail-related-views {
+  font-size: 0.75rem;
+  color: #999;
+  margin-top: 4px;
+}
+
+@media (max-width: 900px) {
+  .video-detail-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,138 @@
+.feedback-page {
+  padding: 40px 20px;
+}
+
+.feedback-hero {
+  max-width: 860px;
+  margin: 0 auto 18px;
+  background: linear-gradient(135deg, #fff7f7, #ffffff 60%);
+  border: 1px solid #f2dede;
+  border-radius: 18px;
+  padding: 24px 28px;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.06);
+  text-align: center;
+}
+
+.feedback-title {
+  margin: 0 0 6px;
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+
+.feedback-subtitle {
+  margin: 0;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.feedback-card {
+  max-width: 860px;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 18px;
+  padding: 24px 28px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+}
+
+.feedback-label {
+  display: block;
+  font-weight: 800;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.feedback-input {
+  width: 100%;
+  border: 1.5px solid #e6e6e6;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-family: 'Cairo', sans-serif;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.feedback-input:focus {
+  border-color: #CC0000;
+  box-shadow: 0 0 0 3px rgba(204,0,0,0.08);
+}
+
+.feedback-textarea {
+  min-height: 110px;
+}
+
+.feedback-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 14px 0;
+}
+
+.feedback-rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.feedback-stars {
+  display: flex;
+  gap: 6px;
+}
+
+.feedback-star {
+  border: 1px solid #f0caca;
+  background: #fff;
+  color: #c9c9c9;
+  font-size: 1.3rem;
+  border-radius: 8px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.feedback-star.is-active {
+  color: #CC0000;
+  border-color: #CC0000;
+}
+
+.feedback-anon {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 10px 0 14px;
+  color: #444;
+  font-weight: 700;
+}
+
+.feedback-actions {
+  margin-top: 12px;
+}
+
+.feedback-alert {
+  margin-top: 12px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.feedback-alert-error {
+  background: #fff2f2;
+  color: #b40000;
+  border: 1px solid #f2baba;
+}
+
+.feedback-alert-success {
+  background: #f3fff5;
+  color: #1a7f37;
+  border: 1px solid #bfe8c9;
+}
+
+@media (max-width: 700px) {
+  .feedback-grid {
+    grid-template-columns: 1fr;
+  }
+  .feedback-rating {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

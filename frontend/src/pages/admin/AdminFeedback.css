@@ -1,0 +1,186 @@
+.admin-feedback {
+  width: 100%;
+}
+
+.admin-feedback-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.admin-feedback-title {
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+
+.admin-feedback-table-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+.admin-feedback-cards {
+  display: none;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.admin-feedback-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 14px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.admin-feedback-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.admin-feedback-date {
+  color: #666;
+  font-size: 0.85rem;
+}
+
+.admin-feedback-card-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 0.9rem;
+}
+
+.admin-feedback-card-label {
+  color: #666;
+  font-weight: 700;
+}
+
+.admin-feedback-card-value {
+  color: #111;
+  font-weight: 700;
+  text-align: left;
+}
+
+.admin-feedback-card-comment {
+  font-weight: 600;
+  color: #333;
+}
+
+.admin-feedback-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-feedback-table-head {
+  background: #f8f8f8;
+}
+
+.admin-feedback-th,
+.admin-feedback-td {
+  padding: 12px 14px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  font-size: 0.9rem;
+}
+
+.admin-feedback-comment {
+  text-align: right;
+}
+
+.admin-feedback-stars {
+  display: inline-flex;
+  gap: 4px;
+  font-size: 1rem;
+}
+
+.admin-feedback-star {
+  color: #c9c9c9;
+}
+
+.admin-feedback-star.is-active {
+  color: #FFD700;
+}
+
+.admin-feedback-empty {
+  text-align: center;
+  padding: 24px;
+  color: #777;
+}
+
+.admin-feedback-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.admin-feedback-page-btn {
+  border: 1px solid #e2e2e2;
+  background: #fff;
+  color: #333;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.admin-feedback-page-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.admin-feedback-page-info {
+  color: #666;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.admin-feedback-page-size {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  color: #555;
+}
+
+.admin-feedback-page-select {
+  padding: 6px 10px;
+  border: 1px solid #e2e2e2;
+  border-radius: 8px;
+  background: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .admin-feedback-table-card {
+    display: none;
+  }
+
+  .admin-feedback-cards {
+    display: grid;
+  }
+}
+
+.admin-feedback-delete-btn {
+  background: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.admin-feedback-delete-btn:hover {
+  background: #c82333;
+}

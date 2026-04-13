@@ -1,0 +1,276 @@
+.match-detail {
+  padding: 40px 20px 20px;
+  min-width: 85%;
+}
+
+.match-detail-back {
+  color: #CC0000;
+  font-weight: 700;
+  margin: 20px 0;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.match-detail-loading {
+  text-align: center;
+  padding: 60px;
+  color: #CC0000;
+  font-size: 1.5rem;
+}
+
+.match-detail-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+  align-items: start;
+  margin-bottom: 20px;
+}
+
+.match-detail-grid > article,
+.match-detail-grid > aside {
+  align-self: start;
+}
+
+.match-detail-card {
+  padding: 24px;
+  margin-bottom: 8px;
+}
+
+.match-detail-top {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.match-detail-competition {
+  font-weight: 800;
+  color: #333;
+}
+
+.match-detail-status {
+  color: #666;
+  font-weight: 700;
+}
+
+.match-detail-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.match-detail-team {
+  text-align: center;
+  flex: 1;
+}
+
+.match-detail-logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #CC0000;
+  margin: 0 auto 10px;
+  display: block;
+}
+
+.match-detail-fallback {
+  display: inline-flex;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background: #f3f3f3;
+  margin-bottom: 10px;
+}
+
+.match-detail-name {
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+
+.match-detail-score {
+  text-align: center;
+  min-width: 120px;
+}
+
+.match-detail-score-value {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #CC0000;
+}
+
+.match-detail-vs {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #bbb;
+}
+
+.match-detail-meta {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  color: #666;
+  font-weight: 700;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 12px;
+}
+
+.match-detail-video {
+  padding: 24px;
+  margin-top: 8px;
+}
+
+.match-detail-section-title {
+  margin-bottom: 10px;
+  font-weight: 900;
+}
+
+.match-detail-aside-title {
+  border-right: 4px solid #CC0000;
+  padding-right: 12px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.match-detail-aside-card {
+  padding: 16px;
+}
+
+.match-detail-aside-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.match-detail-aside-row:last-child {
+  border-bottom: none;
+}
+
+.match-detail-aside-label {
+  color: #777;
+  font-weight: 700;
+}
+
+.match-detail-aside-value {
+  color: #333;
+  font-weight: 800;
+  text-align: left;
+}
+
+.match-detail-direct-video {
+  width: 100%;
+  max-height: 480px;
+  border-radius: 10px;
+}
+
+.match-detail-video .video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+  border-radius: 12px;
+  background: #000;
+}
+
+.match-detail-video .video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.match-detail-announcement {
+  display: block;
+  width: 100%;
+}
+
+.match-detail-announcement-head {
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.badge-announcement {
+  background: #0099ff;
+  color: white;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.match-detail-announcement-title {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: 900;
+  line-height: 1.15;
+  color: #111;
+}
+
+.match-detail-announcement-img-wrap {
+  width: 100%;
+  max-width: 1080px;
+  max-height: 620px;
+  overflow: hidden;
+  border-radius: 18px;
+  margin: 0 auto;
+}
+
+.match-detail-announcement-img {
+  width: 100%;
+  height: auto;
+  max-height: 620px;
+  object-fit: contain;
+  display: block;
+  cursor: zoom-in;
+}
+
+.match-detail-clickable-img:hover {
+  opacity: 0.95;
+}
+
+.image-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.72);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 16px;
+}
+
+.image-modal-content {
+  max-width: 90%;
+  max-height: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-modal-img {
+  max-width: 90vw;
+  max-height: 80vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 14px;
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .match-detail-grid {
+    grid-template-columns: 1fr;
+  }
+  .match-detail-row {
+    flex-direction: column;
+  }
+  .match-detail-score {
+    min-width: auto;
+  }
+}

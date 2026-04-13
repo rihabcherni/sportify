@@ -1,0 +1,31 @@
+{
+  "name": "sportif-tn-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "apexcharts": "^3.54.1",
+    "axios": "^1.6.2",
+    "react": "^18.2.0",
+    "react-apexcharts": "1.4.1",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.21.1",
+    "react-scripts": "5.0.1"
+  },
+  "scripts": {
+    "start": "cross-env NODE_OPTIONS=--no-deprecation react-scripts start",
+    "build": "cross-env NODE_OPTIONS=--no-deprecation react-scripts build"
+  },
+  "proxy": "http://localhost:5000",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead"
+    ],
+    "development": [
+      "last 1 chrome version"
+    ]
+  },
+  "devDependencies": {
+    "cross-env": "^10.1.0"
+  }
+}
