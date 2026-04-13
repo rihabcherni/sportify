@@ -295,19 +295,19 @@ Swagger UI is available at:
 
 ### 🌐 Public Interface
 
-<details>
-<summary><b>🏠 Home & Authentication</b> — click to expand</summary>
+| 🏠 Home |
+|:---:|
+| ![Home](screenshots/home.png) |
+| Overview with key sections |
+
+<b>🔐 Authentication</b>
 <br>
+| 🔐 Login | 📝 Register |
+|:---:|:---:|
+|![Login](screenshots/login.png) | ![Register](screenshots/register.png) |
+| User authentication screen | User registration form |
 
-| 🏠 Home | 🔐 Login | 📝 Register |
-|:---:|:---:|:---:|
-| ![Home](screenshots/home.png) | ![Login](screenshots/login.png) | ![Register](screenshots/register.png) |
-| Overview with key sections | User authentication screen | User registration form |
-
-</details>
-
-<details>
-<summary><b>📰 News</b> — click to expand</summary>
+<b>📰 News</b>
 <br>
 
 | 📰 News List | 📄 News Detail |
@@ -315,10 +315,7 @@ Swagger UI is available at:
 | ![News](screenshots/news.png) | ![News detail](screenshots/news-details.png) |
 | News cards with filters | Full article with image & metadata |
 
-</details>
-
-<details>
-<summary><b>⚽ Matches</b> — click to expand</summary>
+<b>⚽ Matches</b>
 <br>
 
 | ⚽ Matches List | 🏟️ Match Detail |
@@ -326,10 +323,7 @@ Swagger UI is available at:
 | ![Matches](screenshots/matches.png) | ![Match detail](screenshots/match-detail.png) |
 | Schedule and scores | Full match sheet (teams, score, status) |
 
-</details>
-
-<details>
-<summary><b>🎬 Videos</b> — click to expand</summary>
+<b>🎬 Videos</b>
 <br>
 
 | 🎬 Video Gallery | ▶️ Video Detail |
@@ -337,10 +331,7 @@ Swagger UI is available at:
 | ![Videos](screenshots/videos.png) | ![Video detail](screenshots/video-detail.png) |
 | Gallery with previews | Player with title and description |
 
-</details>
-
-<details>
-<summary><b>⭐ Stars & ✍️ Articles</b> — click to expand</summary>
+<b>⭐ Stars & ✍️ Articles</b>
 <br>
 
 | ⭐ Stars List | 🏅 Star Detail |
@@ -353,10 +344,7 @@ Swagger UI is available at:
 | ![Articles](screenshots/articles.png) | ![Article detail](screenshots/article-details.png) |
 | Editorial and analysis | Full article page with content |
 
-</details>
-
-<details>
-<summary><b>💬 Feedback</b> — click to expand</summary>
+<b>💬 Feedback</b>
 <br>
 
 | 💬 Feedback Form |
@@ -370,24 +358,20 @@ Swagger UI is available at:
 
 ### 🛠️ Admin Panel
 
-<details>
-<summary><b>📊 Dashboard & 👥 Users</b> — click to expand</summary>
+<b>📊 Dashboard & 👥 Users</b>
 <br>
 
-| 📊 Admin Dashboard | 👥 Users Management |
-|:---:|:---:|
-| ![Admin dashboard](screenshots/admin-dashboard.png) | ![Admin users](screenshots/admin-users.png) |
-| KPIs, stats, and overview widgets | User accounts and role management |
-
-| 👤 Admin Profile |
+| 📊 Admin Dashboard | 
 |:---:|
-| ![Admin profile](screenshots/admin-profil.png) |
-| Admin account settings |
+| ![Admin dashboard](screenshots/admin-dashboard.png) |
+| KPIs, stats, and overview widgets | 
 
-</details>
+| 👤 Admin Profile |👥 Users Management |
+|:---:|:---:|
+| ![Admin profile](screenshots/admin-profil.png) | ![Admin users](screenshots/admin-users.png) |
+| Admin account settings |User accounts and role management |
 
-<details>
-<summary><b>📰 News Management</b> — click to expand</summary>
+<b>📰 News Management</b>
 <br>
 
 | 📰 News List | ✏️ News Edit |
@@ -395,10 +379,7 @@ Swagger UI is available at:
 | ![Admin news](screenshots/admin-news.png) | ![Admin news edit](screenshots/admin-news-edit.png) |
 | Full CRUD for news | Edit content and images |
 
-</details>
-
-<details>
-<summary><b>⚽ Matches & 🎬 Videos Management</b> — click to expand</summary>
+<b>⚽ Matches & 🎬 Videos Management</b>
 <br>
 
 | ⚽ Matches Management |
@@ -411,10 +392,7 @@ Swagger UI is available at:
 | ![Admin videos](screenshots/admin-videos.png) | ![Admin videos edit](screenshots/admin-videos-edit.png) |
 | Full CRUD for videos | Edit content and links |
 
-</details>
-
-<details>
-<summary><b>⭐ Stars & ✍️ Articles Management</b> — click to expand</summary>
+<b>⭐ Stars & ✍️ Articles Management</b>
 <br>
 
 | ⭐ Stars List | 👤 Star Edit |
@@ -427,10 +405,7 @@ Swagger UI is available at:
 | ![Admin articles](screenshots/admin-articles.png) | ![Admin articles edit](screenshots/admin-articles-edit.png) |
 | Full CRUD for articles | Edit article content |
 
-</details>
-
-<details>
-<summary><b>💬 Feedback Management</b> — click to expand</summary>
+<b>💬 Feedback Management</b>
 <br>
 
 | 💬 Feedback Management |
