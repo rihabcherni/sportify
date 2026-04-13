@@ -3,41 +3,41 @@ version: '3.8'
 services:
   mongodb:
     image: mongo:6
-    container_name: sportif-mongodb
+    container_name: sportify-mongodb
     ports:
       - "27017:27017"
     volumes:
       - mongo-data:/data/db
     networks:
-      - sportif-net
+      - sportify-net
 
   backend:
     build: ./backend
-    container_name: sportif-backend
+    container_name: sportify-backend
     ports:
       - "5000:5000"
     environment:
-      - MONGO_URI=mongodb://mongodb:27017/sportif-tn
-      - JWT_SECRET=sportif_tn_super_secret_2026
+      - MONGO_URI=mongodb+srv://rihabcherni000_db_user:xPBpXhfbvOYzINWS@cluster0.lgeg4iq.mongodb.net/
+      - JWT_SECRET=sportify_tn_super_secret_2026
       - NODE_ENV=production
     depends_on:
       - mongodb
     networks:
-      - sportif-net
+      - sportify-net
 
   frontend:
     build: ./frontend
-    container_name: sportif-frontend
+    container_name: sportify-frontend
     ports:
       - "3000:80"
     depends_on:
       - backend
     networks:
-      - sportif-net
+      - sportify-net
 
 volumes:
   mongo-data:
 
 networks:
-  sportif-net:
+  sportify-net:
     driver: bridge

@@ -25,7 +25,7 @@ app.use('/uploads', express.static(uploadsDir));
 // Root message
 app.get('/', (req, res) => {
   res.json({
-    message: 'Sportif TN backend is running',
+    message: 'Sportify TN backend is running',
     docs: '/api-docs',
   });
 });
@@ -35,7 +35,7 @@ const swaggerSpec = swaggerJsdoc({
   definition: {
     openapi: '3.0.0',
     info: {
-      title: 'Sportif TN API',
+      title: 'Sportify TN API',
       version: '1.0.0',
     },
     servers: [
@@ -69,7 +69,7 @@ app.use('/api/feedback', require('./routes/feedback'));
 app.use('/api/admin', require('./routes/admin'));
 
 // Connect to MongoDB
-mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/sportif-tn')
+mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/sportify-tn')
   .then(() => console.log('✅ MongoDB Connected'))
   .catch(err => console.error('❌ MongoDB Error:', err));
 

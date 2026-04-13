@@ -31,7 +31,7 @@ const Login = () => {
         <div className="login-header">
           <img src="/images/logo.jpg" alt="Logo" className="login-logo" />
           <h1 className="login-title">تسجيل الدخول</h1>
-          <p className="login-subtitle">مرحباً بك في Sportif.tn</p>
+          <p className="login-subtitle">مرحباً بك في Sportify.tn</p>
         </div>
         {error && <div className="login-error">{error}</div>}
         <form onSubmit={handleSubmit}>

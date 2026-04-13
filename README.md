@@ -1,4 +1,4 @@
-# Sportif TN
+# Sportify TN
 
 Plateforme web sportive full‑stack pour publier et consulter des actualites, matchs, videos, articles et stars, avec un espace d’administration pour la gestion du contenu.
 
@@ -17,7 +17,7 @@ Plateforme web sportive full‑stack pour publier et consulter des actualites, m
 
 ## Presentation
 
-Sportif TN est une application web qui centralise les contenus sportifs et offre une interface publique pour les utilisateurs, plus un back‑office pour l’equipe editorial.
+Sportify TN est une application web qui centralise les contenus sportifs et offre une interface publique pour les utilisateurs, plus un back‑office pour l’equipe editorial.
 
 ## Fonctionnalites
 
@@ -76,7 +76,7 @@ npm start
 
 ### Backend (`backend/.env`)
 
-- `MONGO_URI` (ex: `mongodb://localhost:27017/sportif-tn`)
+- `MONGO_URI` (ex: `mongodb://localhost:27017/sportify-tn`)
 - `JWT_SECRET`
 - `PORT` (par defaut `5000`)
 - `API_BASE_URL` (pour Swagger, ex: `http://localhost:5000`)
