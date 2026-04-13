@@ -295,230 +295,147 @@ Swagger UI is available at:
 
 ### 🌐 Public Interface
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin: 20px 0;">
+<details>
+<summary><b>🏠 Home & Authentication</b> — click to expand</summary>
+<br>
 
-<div style="background: #f8f9fa; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-  <div style="padding: 16px; border-bottom: 2px solid #1a73e8;">
-    <h4 style="margin: 0; color: #1a73e8;">🏠 Home</h4>
-    <p style="margin: 8px 0 0 0; font-size: 13px; color: #666;">Overview with key sections (news, matches, videos)</p>
-  </div>
-  <img src="screenshots/home.png" alt="Home" width="100%" style="display: block; aspect-ratio: 16/9; object-fit: cover;"/>
-</div>
+| 🏠 Home | 🔐 Login | 📝 Register |
+|:---:|:---:|:---:|
+| ![Home](screenshots/home.png) | ![Login](screenshots/login.png) | ![Register](screenshots/register.png) |
+| Overview with key sections | User authentication screen | User registration form |
 
-<div style="background: #f8f9fa; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-  <div style="padding: 16px; border-bottom: 2px solid #1a73e8;">
-    <h4 style="margin: 0; color: #1a73e8;">📰 News</h4>
-    <p style="margin: 8px 0 0 0; font-size: 13px; color: #666;">News list with cards and filters</p>
-  </div>
-  <img src="screenshots/news.png" alt="News" width="100%" style="display: block; aspect-ratio: 16/9; object-fit: cover;"/>
-</div>
+</details>
 
-<div style="background: #f8f9fa; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-  <div style="padding: 16px; border-bottom: 2px solid #1a73e8;">
-    <h4 style="margin: 0; color: #1a73e8;">📄 News Detail</h4>
-    <p style="margin: 8px 0 0 0; font-size: 13px; color: #666;">Full article with image, content, and metadata</p>
-  </div>
-  <img src="screenshots/news-details.png" alt="News detail" width="100%" style="display: block; aspect-ratio: 16/9; object-fit: cover;"/>
-</div>
+<details>
+<summary><b>📰 News</b> — click to expand</summary>
+<br>
 
-<div style="background: #f8f9fa; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-  <div style="padding: 16px; border-bottom: 2px solid #1a73e8;">
-    <h4 style="margin: 0; color: #1a73e8;">⚽ Matches</h4>
-    <p style="margin: 8px 0 0 0; font-size: 13px; color: #666;">Schedule and match list with scores</p>
-  </div>
-  <img src="screenshots/matches.png" alt="Matches" width="100%" style="display: block; aspect-ratio: 16/9; object-fit: cover;"/>
-</div>
+| 📰 News List | 📄 News Detail |
+|:---:|:---:|
+| ![News](screenshots/news.png) | ![News detail](screenshots/news-details.png) |
+| News cards with filters | Full article with image & metadata |
 
-<div style="background: #f8f9fa; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-  <div style="padding: 16px; border-bottom: 2px solid #1a73e8;">
-    <h4 style="margin: 0; color: #1a73e8;">🏟️ Match Detail</h4>
-    <p style="margin: 8px 0 0 0; font-size: 13px; color: #666;">Full match sheet (teams, score, status)</p>
-  </div>
-  <img src="screenshots/match-detail.png" alt="Match detail" width="100%" style="display: block; aspect-ratio: 16/9; object-fit: cover;"/>
-</div>
+</details>
 
-<div style="background: #f8f9fa; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-  <div style="padding: 16px; border-bottom: 2px solid #1a73e8;">
-    <h4 style="margin: 0; color: #1a73e8;">🎬 Videos</h4>
-    <p style="margin: 8px 0 0 0; font-size: 13px; color: #666;">Video gallery with previews</p>
-  </div>
-  <img src="screenshots/videos.png" alt="Videos" width="100%" style="display: block; aspect-ratio: 16/9; object-fit: cover;"/>
-</div>
+<details>
+<summary><b>⚽ Matches</b> — click to expand</summary>
+<br>
 
-<div style="background: #f8f9fa; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-  <div style="padding: 16px; border-bottom: 2px solid #1a73e8;">
-    <h4 style="margin: 0; color: #1a73e8;">▶️ Video Detail</h4>
-    <p style="margin: 8px 0 0 0; font-size: 13px; color: #666;">Video player with title and description</p>
-  </div>
-  <img src="screenshots/video-detail.png" alt="Video detail" width="100%" style="display: block; aspect-ratio: 16/9; object-fit: cover;"/>
-</div>
+| ⚽ Matches List | 🏟️ Match Detail |
+|:---:|:---:|
+| ![Matches](screenshots/matches.png) | ![Match detail](screenshots/match-detail.png) |
+| Schedule and scores | Full match sheet (teams, score, status) |
 
-<div style="background: #f8f9fa; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-  <div style="padding: 16px; border-bottom: 2px solid #1a73e8;">
-    <h4 style="margin: 0; color: #1a73e8;">⭐ Stars</h4>
-    <p style="margin: 8px 0 0 0; font-size: 13px; color: #666;">List of players and public figures</p>
-  </div>
-  <img src="screenshots/stars.png" alt="Stars" width="100%" style="display: block; aspect-ratio: 16/9; object-fit: cover;"/>
-</div>
+</details>
 
-<div style="background: #f8f9fa; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-  <div style="padding: 16px; border-bottom: 2px solid #1a73e8;">
-    <h4 style="margin: 0; color: #1a73e8;">🏅 Star Detail</h4>
-    <p style="margin: 8px 0 0 0; font-size: 13px; color: #666;">Profile with bio and stats</p>
-  </div>
-  <img src="screenshots/star-detail.png" alt="Star detail" width="100%" style="display: block; aspect-ratio: 16/9; object-fit: cover;"/>
-</div>
+<details>
+<summary><b>🎬 Videos</b> — click to expand</summary>
+<br>
 
-<div style="background: #f8f9fa; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-  <div style="padding: 16px; border-bottom: 2px solid #1a73e8;">
-    <h4 style="margin: 0; color: #1a73e8;">✍️ Articles</h4>
-    <p style="margin: 8px 0 0 0; font-size: 13px; color: #666;">Editorial and analysis articles</p>
-  </div>
-  <img src="screenshots/articles.png" alt="Articles" width="100%" style="display: block; aspect-ratio: 16/9; object-fit: cover;"/>
-</div>
+| 🎬 Video Gallery | ▶️ Video Detail |
+|:---:|:---:|
+| ![Videos](screenshots/videos.png) | ![Video detail](screenshots/video-detail.png) |
+| Gallery with previews | Player with title and description |
 
-<div style="background: #f8f9fa; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-  <div style="padding: 16px; border-bottom: 2px solid #1a73e8;">
-    <h4 style="margin: 0; color: #1a73e8;">📖 Article Details</h4>
-    <p style="margin: 8px 0 0 0; font-size: 13px; color: #666;">Full article page with content</p>
-  </div>
-  <img src="screenshots/article-details.png" alt="Article Details" width="100%" style="display: block; aspect-ratio: 16/9; object-fit: cover;"/>
-</div>
+</details>
 
-<div style="background: #f8f9fa; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-  <div style="padding: 16px; border-bottom: 2px solid #1a73e8;">
-    <h4 style="margin: 0; color: #1a73e8;">🔐 Login</h4>
-    <p style="margin: 8px 0 0 0; font-size: 13px; color: #666;">User authentication screen</p>
-  </div>
-  <img src="screenshots/login.png" alt="Login" width="100%" style="display: block; aspect-ratio: 16/9; object-fit: cover;"/>
-</div>
+<details>
+<summary><b>⭐ Stars & ✍️ Articles</b> — click to expand</summary>
+<br>
 
-<div style="background: #f8f9fa; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-  <div style="padding: 16px; border-bottom: 2px solid #1a73e8;">
-    <h4 style="margin: 0; color: #1a73e8;">📝 Register</h4>
-    <p style="margin: 8px 0 0 0; font-size: 13px; color: #666;">User registration form</p>
-  </div>
-  <img src="screenshots/register.png" alt="Register" width="100%" style="display: block; aspect-ratio: 16/9; object-fit: cover;"/>
-</div>
+| ⭐ Stars List | 🏅 Star Detail |
+|:---:|:---:|
+| ![Stars](screenshots/stars.png) | ![Star detail](screenshots/star-detail.png) |
+| Players and public figures | Profile with bio and stats |
 
-<div style="background: #f8f9fa; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-  <div style="padding: 16px; border-bottom: 2px solid #1a73e8;">
-    <h4 style="margin: 0; color: #1a73e8;">💬 Feedback</h4>
-    <p style="margin: 8px 0 0 0; font-size: 13px; color: #666;">User feedback submission form</p>
-  </div>
-  <img src="screenshots/feedback.png" alt="Feedback" width="100%" style="display: block; aspect-ratio: 16/9; object-fit: cover;"/>
-</div>
+| ✍️ Articles List | 📖 Article Detail |
+|:---:|:---:|
+| ![Articles](screenshots/articles.png) | ![Article detail](screenshots/article-details.png) |
+| Editorial and analysis | Full article page with content |
 
-</div>
+</details>
+
+<details>
+<summary><b>💬 Feedback</b> — click to expand</summary>
+<br>
+
+| 💬 Feedback Form |
+|:---:|
+| ![Feedback](screenshots/feedback.png) |
+| User feedback submission form |
+
+</details>
 
 ---
 
 ### 🛠️ Admin Panel
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 24px; margin: 20px 0;">
+<details>
+<summary><b>📊 Dashboard & 👥 Users</b> — click to expand</summary>
+<br>
 
-<div style="background: #f8f9fa; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-  <div style="padding: 16px; border-bottom: 2px solid #ea4335;">
-    <h4 style="margin: 0; color: #ea4335;">📊 Admin Dashboard</h4>
-    <p style="margin: 8px 0 0 0; font-size: 13px; color: #666;">Overview with widgets and KPIs</p>
-  </div>
-  <img src="screenshots/admin-dashboard.png" alt="Admin dashboard" width="100%" style="display: block; aspect-ratio: 16/9; object-fit: cover;"/>
-</div>
+| 📊 Admin Dashboard | 👥 Users Management |
+|:---:|:---:|
+| ![Admin dashboard](screenshots/admin-dashboard.png) | ![Admin users](screenshots/admin-users.png) |
+| KPIs, stats, and overview widgets | User accounts and role management |
 
-<div style="background: #f8f9fa; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-  <div style="padding: 16px; border-bottom: 2px solid #ea4335;">
-    <h4 style="margin: 0; color: #ea4335;">📰 News Management</h4>
-    <p style="margin: 8px 0 0 0; font-size: 13px; color: #666;">Full CRUD for news</p>
-  </div>
-  <img src="screenshots/admin-news.png" alt="Admin news" width="100%" style="display: block; aspect-ratio: 16/9; object-fit: cover;"/>
-</div>
+| 👤 Admin Profile |
+|:---:|
+| ![Admin profile](screenshots/admin-profil.png) |
+| Admin account settings |
 
-<div style="background: #f8f9fa; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-  <div style="padding: 16px; border-bottom: 2px solid #ea4335;">
-    <h4 style="margin: 0; color: #ea4335;">✏️ News Edit</h4>
-    <p style="margin: 8px 0 0 0; font-size: 13px; color: #666;">Edit news content and images</p>
-  </div>
-  <img src="screenshots/admin-news-edit.png" alt="Admin news edit" width="100%" style="display: block; aspect-ratio: 16/9; object-fit: cover;"/>
-</div>
+</details>
 
-<div style="background: #f8f9fa; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-  <div style="padding: 16px; border-bottom: 2px solid #ea4335;">
-    <h4 style="margin: 0; color: #ea4335;">⚽ Matches Management</h4>
-    <p style="margin: 8px 0 0 0; font-size: 13px; color: #666;">Full CRUD for matches</p>
-  </div>
-  <img src="screenshots/admin-matches.png" alt="Admin matches" width="100%" style="display: block; aspect-ratio: 16/9; object-fit: cover;"/>
-</div>
+<details>
+<summary><b>📰 News Management</b> — click to expand</summary>
+<br>
 
-<div style="background: #f8f9fa; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-  <div style="padding: 16px; border-bottom: 2px solid #ea4335;">
-    <h4 style="margin: 0; color: #ea4335;">🎬 Videos Management</h4>
-    <p style="margin: 8px 0 0 0; font-size: 13px; color: #666;">Full CRUD for videos</p>
-  </div>
-  <img src="screenshots/admin-videos.png" alt="Admin videos" width="100%" style="display: block; aspect-ratio: 16/9; object-fit: cover;"/>
-</div>
+| 📰 News List | ✏️ News Edit |
+|:---:|:---:|
+| ![Admin news](screenshots/admin-news.png) | ![Admin news edit](screenshots/admin-news-edit.png) |
+| Full CRUD for news | Edit content and images |
 
-<div style="background: #f8f9fa; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-  <div style="padding: 16px; border-bottom: 2px solid #ea4335;">
-    <h4 style="margin: 0; color: #ea4335;">🎥 Videos Edit</h4>
-    <p style="margin: 8px 0 0 0; font-size: 13px; color: #666;">Edit video content and links</p>
-  </div>
-  <img src="screenshots/admin-videos-edit.png" alt="Admin videos edit" width="100%" style="display: block; aspect-ratio: 16/9; object-fit: cover;"/>
-</div>
+</details>
 
-<div style="background: #f8f9fa; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-  <div style="padding: 16px; border-bottom: 2px solid #ea4335;">
-    <h4 style="margin: 0; color: #ea4335;">⭐ Stars Management</h4>
-    <p style="margin: 8px 0 0 0; font-size: 13px; color: #666;">Full CRUD for stars</p>
-  </div>
-  <img src="screenshots/admin-stars.png" alt="Admin stars" width="100%" style="display: block; aspect-ratio: 16/9; object-fit: cover;"/>
-</div>
+<details>
+<summary><b>⚽ Matches & 🎬 Videos Management</b> — click to expand</summary>
+<br>
 
-<div style="background: #f8f9fa; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-  <div style="padding: 16px; border-bottom: 2px solid #ea4335;">
-    <h4 style="margin: 0; color: #ea4335;">👤 Star Edit</h4>
-    <p style="margin: 8px 0 0 0; font-size: 13px; color: #666;">Edit star profiles and photos</p>
-  </div>
-  <img src="screenshots/admin-stars-edit.png" alt="Admin stars edit" width="100%" style="display: block; aspect-ratio: 16/9; object-fit: cover;"/>
-</div>
+| ⚽ Matches Management |
+|:---:|
+| ![Admin matches](screenshots/admin-matches.png) |
+| Full CRUD for matches |
 
-<div style="background: #f8f9fa; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-  <div style="padding: 16px; border-bottom: 2px solid #ea4335;">
-    <h4 style="margin: 0; color: #ea4335;">✍️ Articles Management</h4>
-    <p style="margin: 8px 0 0 0; font-size: 13px; color: #666;">Full CRUD for articles</p>
-  </div>
-  <img src="screenshots/admin-articles.png" alt="Admin articles" width="100%" style="display: block; aspect-ratio: 16px/9; object-fit: cover;"/>
-</div>
+| 🎬 Videos List | 🎥 Videos Edit |
+|:---:|:---:|
+| ![Admin videos](screenshots/admin-videos.png) | ![Admin videos edit](screenshots/admin-videos-edit.png) |
+| Full CRUD for videos | Edit content and links |
 
-<div style="background: #f8f9fa; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-  <div style="padding: 16px; border-bottom: 2px solid #ea4335;">
-    <h4 style="margin: 0; color: #ea4335;">📝 Article Edit</h4>
-    <p style="margin: 8px 0 0 0; font-size: 13px; color: #666;">Edit article content</p>
-  </div>
-  <img src="screenshots/admin-articles-edit.png" alt="Admin articles edit" width="100%" style="display: block; aspect-ratio: 16/9; object-fit: cover;"/>
-</div>
+</details>
 
-<div style="background: #f8f9fa; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-  <div style="padding: 16px; border-bottom: 2px solid #ea4335;">
-    <h4 style="margin: 0; color: #ea4335;">💬 Feedback Management</h4>
-    <p style="margin: 8px 0 0 0; font-size: 13px; color: #666;">Review and moderation</p>
-  </div>
-  <img src="screenshots/admin-feedback.png" alt="Admin feedback" width="100%" style="display: block; aspect-ratio: 16/9; object-fit: cover;"/>
-</div>
+<details>
+<summary><b>⭐ Stars & ✍️ Articles Management</b> — click to expand</summary>
+<br>
 
-<div style="background: #f8f9fa; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-  <div style="padding: 16px; border-bottom: 2px solid #ea4335;">
-    <h4 style="margin: 0; color: #ea4335;">👤 Admin Profile</h4>
-    <p style="margin: 8px 0 0 0; font-size: 13px; color: #666;">Admin account settings and profile</p>
-  </div>
-  <img src="screenshots/admin-profil.png" alt="Admin profile" width="100%" style="display: block; aspect-ratio: 16/9; object-fit: cover;"/>
-</div>
+| ⭐ Stars List | 👤 Star Edit |
+|:---:|:---:|
+| ![Admin stars](screenshots/admin-stars.png) | ![Admin stars edit](screenshots/admin-stars-edit.png) |
+| Full CRUD for stars | Edit profiles and photos |
 
-<div style="background: #f8f9fa; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-  <div style="padding: 16px; border-bottom: 2px solid #ea4335;">
-    <h4 style="margin: 0; color: #ea4335;">👥 Users Management</h4>
-    <p style="margin: 8px 0 0 0; font-size: 13px; color: #666;">User accounts and role management</p>
-  </div>
-  <img src="screenshots/admin-users.png" alt="Admin users" width="100%" style="display: block; aspect-ratio: 16/9; object-fit: cover;"/>
-</div>
+| ✍️ Articles List | 📝 Article Edit |
+|:---:|:---:|
+| ![Admin articles](screenshots/admin-articles.png) | ![Admin articles edit](screenshots/admin-articles-edit.png) |
+| Full CRUD for articles | Edit article content |
 
-</div>
+</details>
+
+<details>
+<summary><b>💬 Feedback Management</b> — click to expand</summary>
+<br>
+
+| 💬 Feedback Management |
+|:---:|
+| ![Admin feedback](screenshots/admin-feedback.png) |
+| Review and moderation |
+
+</details>
