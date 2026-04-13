@@ -1,10 +1,10 @@
 const express = require('express');
-const mongoose = require('mongoose');
 const cors = require('cors');
 const dotenv = require('dotenv');
 const path = require('path');
 const fs = require('fs');
 const os = require('os');
+const connectDB = require('./utils/connectDB');
 const swaggerUi = require('swagger-ui-express');
 const swaggerJsdoc = require('swagger-jsdoc');
 
@@ -58,6 +58,17 @@ const swaggerSpec = swaggerJsdoc({
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
+// Ensure DB connection for API routes (important for serverless)
+app.use('/api', async (req, res, next) => {
+  try {
+    await connectDB();
+    return next();
+  } catch (err) {
+    console.error('❌ MongoDB Error:', err);
+    return res.status(500).json({ message: 'Database connection failed' });
+  }
+});
+
 // Routes
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/news', require('./routes/news'));
@@ -68,11 +79,6 @@ app.use('/api/articles', require('./routes/articles'));
 app.use('/api/feedback', require('./routes/feedback'));
 app.use('/api/admin', require('./routes/admin'));
 
-// Connect to MongoDB
-mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/sportify-tn')
-  .then(() => console.log('✅ MongoDB Connected'))
-  .catch(err => console.error('❌ MongoDB Error:', err));
-
 const PORT = process.env.PORT || 5000;
 
 // Export app for serverless platforms (e.g., Vercel)
@@ -80,5 +86,12 @@ module.exports = app;
 
 // Only start a listener when this file is executed directly.
 if (require.main === module) {
-  app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+  connectDB()
+    .then(() => {
+      console.log('✅ MongoDB Connected');
+      app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+    })
+    .catch((err) => {
+      console.error('❌ MongoDB Error:', err);
+    });
 }
