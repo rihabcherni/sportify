@@ -1,8 +1,6 @@
 <div align="center">
 
-<img src="https://img.shields.io/badge/Sportify-TN-1a73e8?style=for-the-badge&logo=lightning&logoColor=white" alt="Sportify TN" height="60"/>
-
-# ⚽ Sportify TN
+# ⚽ Sportify TN <img src="https://img.shields.io/badge/Sportify-TN-1a73e8?style=for-the-badge&logo=lightning&logoColor=white" alt="Sportify TN" height="20"/>
 
 **All-in-one Tunisian sports platform — news, matches, videos, articles, and stars**
 
@@ -23,11 +21,6 @@
 - [Features](#-features)
 - [Tech Stack](#-tech-stack)
 - [Architecture](#-architecture)
-- [Quick Start (Docker)](#-quick-start-docker)
-- [Local Setup](#-local-setup)
-- [Environment Variables](#-environment-variables)
-- [Deployment (Vercel)](#-deployment-vercel)
-- [API Documentation](#-api-documentation)
 - [Screenshots](#-screenshots)
 
 ---
@@ -106,7 +99,7 @@ sportify-tn/
 │   └── .env.production
 │
 ├── backend/                # Express REST API
-│   ├── api/                # Serverless entry (Vercel)
+│   ├── api/                # Serverless entry 
 │   ├── models/             # Mongoose schemas
 │   ├── routes/             # API routes
 │   ├── middleware/         # Auth, uploads, validation
@@ -127,168 +120,6 @@ sportify-tn/
 │   (Nginx)   │    │  + Multer   │    │             │
 └─────────────┘    └─────────────┘    └─────────────┘
 ```
-
----
-
-## 🚀 Quick Start (Docker)
-
-> **Prerequisites:** Docker and Docker Compose installed
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/your-org/sportify-tn.git
-cd sportify-tn
-```
-
-### 2. Configure environment files
-
-```bash
-# Create local env files based on production examples
-cp backend/.env.production backend/.env
-cp frontend/.env.production frontend/.env
-# Edit the files with your local values
-```
-
-### 3. Start all services
-
-```bash
-docker compose up --build
-```
-
-### 4. Access services
-
-| Service | URL |
-|---|---|
-| 🌐 Frontend | http://localhost:3000 |
-| ⚙️ Backend API | http://localhost:5000 |
-| 📖 Swagger Docs | http://localhost:5000/api-docs |
-
-### 5. Seed the database (optional)
-
-```bash
-docker compose exec backend npm run seed
-```
-
----
-
-## 💻 Local Setup
-
-### Prerequisites
-
-- Node.js >= 16
-- MongoDB >= 5.0 (local or Atlas)
-- npm or yarn
-
-### Backend
-
-```bash
-cd backend
-npm install
-cp .env.production .env
-npm run dev   # runs on http://localhost:5000
-```
-
-### Frontend
-
-```bash
-cd frontend
-npm install
-cp .env.production .env
-npm start     # runs on http://localhost:3000
-```
-
----
-
-## 🔧 Environment Variables
-
-### Backend — `backend/.env`
-
-```env
-# Database
-MONGO_URI=mongodb://localhost:27017/sportify-tn
-
-# Authentication
-JWT_SECRET=your_jwt_secret
-
-# Server
-PORT=5000
-NODE_ENV=development
-
-# Swagger
-API_BASE_URL=http://localhost:5000
-
-# Uploads
-UPLOADS_DIR=./uploads
-```
-
-### Frontend — `frontend/.env`
-
-```env
-# Axios base URL
-REACT_APP_API_BASE_URL=http://localhost:5000
-
-# Used to resolve image/media URLs
-REACT_APP_API_URL=http://localhost:5000
-```
-
----
-
-## 🚀 Deployment (Vercel)
-
-This project can be deployed as two separate apps on Vercel:
-
-- **Backend** (Node/Express) from the `backend/` folder
-- **Frontend** (React) from the `frontend/` folder
-
-### Backend (Vercel)
-
-1. Create a new Vercel project from the `backend/` directory.
-2. Set **Build & Output** defaults (Vercel will use `api/index.js`).
-3. Add environment variables (Project Settings → Environment Variables):
-   - `MONGO_URI`
-   - `JWT_SECRET`
-   - `API_BASE_URL` (set to your backend Vercel URL)
-   - `UPLOADS_DIR` (recommended: `/tmp/uploads`)
-   - `BLOB_READ_WRITE_TOKEN` (if using Vercel Blob)
-4. Deploy.
-
-The backend exposes Swagger at:
-
-```
-https://your-backend.vercel.app/api-docs
-```
-
-### Frontend (Vercel)
-
-1. Create a new Vercel project from the `frontend/` directory.
-2. Set the **Build Command** to `npm run build` and **Output** to `build`.
-3. Add environment variables:
-   - `REACT_APP_API_BASE_URL` (set to your backend Vercel URL)
-   - `REACT_APP_API_URL` (same backend URL for media)
-4. Deploy.
-
----
-
-## 📖 API Documentation
-
-Swagger UI is available at:
-
-**➜ http://localhost:5000/api-docs**
-
-### Main Endpoints
-
-| Resource | Base URL | Auth Required |
-|---|---|---|
-| News | `/api/news` | Admin (write) |
-| Matches | `/api/matches` | Admin (write) |
-| Videos | `/api/videos` | Admin (write) |
-| Articles | `/api/articles` | Admin (write) |
-| Stars | `/api/stars` | Admin (write) |
-| Feedback | `/api/feedback` | Admin (read) |
-| Auth | `/api/auth` | No |
-| Admin | `/api/admin` | Admin |
-
 ---
 
 ## 📸 Screenshots
@@ -352,8 +183,6 @@ Swagger UI is available at:
 | ![Feedback](screenshots/feedback.png) |
 | User feedback submission form |
 
-</details>
-
 ---
 
 ### 🛠️ Admin Panel
@@ -412,5 +241,3 @@ Swagger UI is available at:
 |:---:|
 | ![Admin feedback](screenshots/admin-feedback.png) |
 | Review and moderation |
-
-</details>
